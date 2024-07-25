@@ -1720,13 +1720,13 @@ const resList = [
 const Body = () => {
     return(
         <div className="res-container">
-{/*            
+           
             {
                 resList.map((item) => (
                     <Rescard resData={item}/>
                 ))
             }
-             */}
+            
              <Rescard resData = {resList}/>
              
 
