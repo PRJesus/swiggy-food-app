@@ -1,8 +1,10 @@
 import React from "react";
+import { CDN_URL } from "../utils/constants";
 
 
 const Rescard = (props) => {
     const {resData} = props;
+    const {name,cloudinaryImageId,cuisines,costForTwo,avgRating} = resData?.info;
    
     
     return(
@@ -11,11 +13,11 @@ const Rescard = (props) => {
                 item.
             }) */}
             
-            <img className="rescard-img" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData?.info?.cloudinaryImageId}  alt= "rescard-img"/>
-            <h3>{resData?.info?.name}</h3>
-            <h6>{resData?.info?.cuisines.join(",")}</h6>
-            <h6>{resData?.info?.costForTwo}</h6>
-            <h6>{resData?.info?.avgRating} stars</h6>
+            <img className="rescard-img" src={CDN_URL + resData?.info?.cloudinaryImageId}  alt= "rescard-img"/>
+            <h3>{name}</h3>
+            <h6>{cuisines.join(",")}</h6>
+            <h6>{costForTwo}</h6>
+            <h6>{avgRating} stars</h6>
          
 
         </div>

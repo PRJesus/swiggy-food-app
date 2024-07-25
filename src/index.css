@@ -30,6 +30,7 @@
   padding: 10px;
   background-color: #f0f0f0;
   margin: 10px;
+  border-radius: 20px;
   
 }
 .res-card:hover{
@@ -43,4 +44,10 @@
   
    width:100%;
 
+}
+.search{
+  margin: 20px;
+}
+.filter-btn{
+  cursor: pointer;
 }
