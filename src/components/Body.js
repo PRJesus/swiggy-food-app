@@ -1727,8 +1727,7 @@ const Body = () => {
                 ))
             }
             
-             <Rescard resData = {resList}/>
-             
+           
 
         </div>
         

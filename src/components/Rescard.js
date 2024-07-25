@@ -1,7 +1,8 @@
 import React from "react";
 
 
-const Rescard = (resData) => {
+const Rescard = (props) => {
+    const {resData} = props;
    
     
     return(
